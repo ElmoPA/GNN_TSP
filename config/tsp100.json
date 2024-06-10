@@ -1,0 +1,17 @@
+{  
+  "hidden_dim": 300,
+  "num_layers": 30,
+  "mlp_layers": 3,
+  "aggregation": "mean",
+
+  "max_epochs": 1500,
+  "val_every": 5,
+  "test_every": 100,
+
+  "batch_size": 20,
+  "batches_per_epoch": 500,
+  "accumulation_steps": 1,
+
+  "learning_rate": 0.001,
+  "decay_rate": 1.01
+}

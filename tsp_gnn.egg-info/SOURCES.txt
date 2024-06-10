@@ -1,0 +1,14 @@
+setup.py
+tsp_gnn/__init__.py
+tsp_gnn.egg-info/PKG-INFO
+tsp_gnn.egg-info/SOURCES.txt
+tsp_gnn.egg-info/dependency_links.txt
+tsp_gnn.egg-info/top_level.txt
+tsp_gnn/models/GCNStack.py
+tsp_gnn/models/__init__.py
+tsp_gnn/models/gcn_layers.py
+tsp_gnn/models/gcn_model.py
+tsp_gnn/utils/__init__.py
+tsp_gnn/utils/graph_generator.py
+tsp_gnn/utils/solver.py
+tsp_gnn/utils/visual.py
