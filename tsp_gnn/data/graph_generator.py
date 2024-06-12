@@ -21,17 +21,3 @@ def generate_graph(num_nodes, edge_prob=0.4):
     return data, dist_matrix
 
 
-def floydd_warshall(dist_matrix, num_nodes):
-    adjacency_matrix = dist_matrix.clone()
-    adjacency_matrix[adjacency_matrix < 1e-6] = float("inf")
-    for k in range(num_nodes):
-        for i in range(num_nodes):
-            for j in range(num_nodes):
-                if (
-                    adjacency_matrix[i, k] + adjacency_matrix[k, j]
-                    < adjacency_matrix[i, j]
-                ):
-                    adjacency_matrix[i, j] = (
-                        adjacency_matrix[i, k] + adjacency_matrix[k, j]
-                    )
-    return adjacency_matrix
